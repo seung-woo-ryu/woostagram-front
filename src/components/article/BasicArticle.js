@@ -13,7 +13,6 @@ import ShareIcon from '@mui/icons-material/Share';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import AddCommentIcon from '@mui/icons-material/AddComment';
 
-
 const BasicArticle = (props) =>{
   return (
     <Card sx={{ width: 500,minHeight:500,  marginTop:5}}>
@@ -53,7 +52,6 @@ const BasicArticle = (props) =>{
           <ShareIcon />
         </IconButton>
       </CardActions>
-      
       <CardContent sx={{padding:1}}>
         <Typography variant="button" color="text.primary" sx={{fontWeight: "bold",marginRight:1}}>
           {props.authorNickname}
