@@ -1,5 +1,5 @@
 import React,{useState} from 'react';
-import {SignFormDiv,WoostagramImg,SignFormMain, FormContents, ChangeSignForm} from '../components/signForm';
+import {SignFormDiv,WoostagramImg,SignFormMain, FormContents, ChangeSignForm} from '../components/signPage';
 
 // ---------- SignFormDiv style 
 const SignFormMostOuterDivStyle ={
@@ -16,7 +16,7 @@ const SignFormDivStyle = {
     justifyContent:"space-evenly",
     alignItems:"center",
     width:"40vw",
-    height:"80vh"
+    height:"100vh"
 }
 
 // ---------- SignFormMain style
@@ -28,7 +28,7 @@ const SignFormMainStyle ={
     borderRadius:'10px',
     justifyContent:"space-evenly",
     alignItems:"center",
-    height:"70%",
+    height:"80%",
     width:"90%"
 }
 
@@ -52,8 +52,6 @@ const FormContentsStyle ={
     width:"80%",
     
 }
-
-
 
 const SignPage = ()=>{
     const [state, setState] = useState("login");
