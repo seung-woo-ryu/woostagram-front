@@ -1,3 +1,4 @@
 import SignPage from './SignPage'
-
-export {SignPage} ;
+import HomePage from './HomePage'
+import AddArticlePage from './AddArticlePage'
+export {SignPage,HomePage,AddArticlePage} ;
