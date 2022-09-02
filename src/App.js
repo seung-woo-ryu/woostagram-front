@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import {Routes,Route}from 'react-router-dom';
+import {SignPage,HomePage,AddArticlePage} from './routes';
+import {BrowserRouter} from 'react-router-dom';
+import CssBaseline from '@mui/material/CssBaseline';
+import GlobalStyles from '@mui/material/GlobalStyles';
 
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+    <CssBaseline />
+    <GlobalStyles styles={{ ul: { margin: 0, padding: 0, listStyle: 'none' } }} />
+      <Routes>
+        <Route path="/" element={<SignPage />}> </Route>
+        <Route path="/home" element={<HomePage/>}> </Route>
+        <Route path="/add-article" element={<AddArticlePage/>}> </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
